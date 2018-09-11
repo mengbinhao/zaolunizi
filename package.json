@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/mengbinhao/zaolunizi/issues"
   },
-  "homepage": "https://github.com/mengbinhao/zaolunizi#readme"
+  "homepage": "https://github.com/mengbinhao/zaolunizi#readme",
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
 }
