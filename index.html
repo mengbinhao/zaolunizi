@@ -36,9 +36,9 @@
 
 <body>
     <div id="app">
-        <my-button icon="setting">设置</my-button>
+        <my-button :loading="loadingFlag" icon="setting" @click="loadingFlag=!loadingFlag">设置</my-button>
         <my-button>按钮</my-button>
-        <my-button icon="download" icon-position="right">下载</my-button>
+        <my-button icon="download" icon-position="right" :loading="true">下载</my-button>
         <my-button icon="thumbsup" icon-position="up">赞</my-button>
         <my-icon name="setting">设置</my-icon>
     </div>
