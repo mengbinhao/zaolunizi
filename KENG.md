@@ -11,4 +11,7 @@
         "vue" : "./node_modules/vue/dist/vue.common.js"
     }
     ```
-3. vertical-align: middle;
+3. css对齐  
+    ```
+    vertical-align: middle;
+    ```

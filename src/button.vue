@@ -1,5 +1,6 @@
 <template>
     <button class="my-button" :class="{[`icon-${iconPosition}`]: true}">
+        <my-icon class="loading" name="loading"/>
         <my-icon v-if="icon" :name="icon" class="icon"/>
         <div class="content">
             <slot/>
@@ -38,7 +39,7 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  vertical-align: middle;  //fix bug
+  vertical-align: middle; //fix bug
   &:hover {
     border-color: var(--border-color-hover);
   }
@@ -49,21 +50,33 @@ export default {
     outline: none;
   }
   > .icon {
-      order: 1;
-      margin-right: .1em;
+    order: 1;
+    margin-right: 0.1em;
   }
   > .content {
-      order: 2;
+    order: 2;
   }
   &.icon-right {
-      > .content {
-          order: 1;
-      }
-      > .icon {
-          order: 2;
-          margin-left: .1em;
-          margin-right: 0;
-      }
+    > .content {
+      order: 1;
+    }
+    > .icon {
+      order: 2;
+      margin-left: 0.1em;
+      margin-right: 0;
+    }
+  }
+
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading {
+    animation: circle 1s infinite linear;
   }
 }
 </style>
