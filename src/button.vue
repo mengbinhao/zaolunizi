@@ -1,8 +1,6 @@
 <template>
     <button class="my-button" :class="{[`icon-${iconPosition}`]: true}">
-        <svg v-if="icon" class="icon">
-            <use :xlink:href="`#i-${icon}`"></use>
-        </svg>
+        <my-icon v-if="icon" :name="icon" class="icon"/>
         <div class="content">
             <slot/>
         </div>
@@ -29,7 +27,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .my-button {
   height: var(--button-height);
   font-size: var(--font-size);
