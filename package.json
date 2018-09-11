@@ -1,0 +1,23 @@
+{
+  "name": "zaolunzi",
+  "version": "0.0.1",
+  "description": "vue ui component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengbinhao/zaolunizi.git"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "Jack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mengbinhao/zaolunizi/issues"
+  },
+  "homepage": "https://github.com/mengbinhao/zaolunizi#readme"
+}
