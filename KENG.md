@@ -11,4 +11,4 @@
         "vue" : "./node_modules/vue/dist/vue.common.js"
     }
     ```
-3. 
+3. vertical-align: middle;

@@ -12,9 +12,11 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-size: var(--font-size);
         }
+
         :root {
             --button-height: 32px;
             --font-size: 14px;
@@ -25,19 +27,25 @@
             --border-color: #999;
             --border-color-hover: #666;
         }
+
         #app {
             margin: 20px;
+        }
+
+        .icon {
+            width: 1em;
+            height: 1em;
         }
     </style>
 </head>
 
 <body>
     <div id="app">
-        <my-button />
+        <my-button icon="setting">设置</my-button>
+        <my-button>按钮</my-button>
+        <my-button icon="download" icon-position="right">下载</my-button>
     </div>
 </body>
 <script src="./src/app.js"></script>
-<script type="text/javascript">
-</script>
-
+<script src="//at.alicdn.com/t/font_832217_ez5f4oazhjf.js"></script>
 </html>
