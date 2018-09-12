@@ -12,7 +12,21 @@
 6. 单元测试
     - chai
     - chai spies (mock click)
-7. 自动化测试(Karma)
+    - 使用块隔绝作用域+断言
+7. 自动化测试
+    - Karma测试运行器 呼起浏览器 加载测试脚本 运行测试脚本
+    - Mocha 单元测试框架 写测试用例
+    - Sinon  JavaScript test spies, stubs and mocks 辅助测试
+    ```
+    1 npm i -D karma karma-chrome-launcher karma-mocha karma-sinon-chai mocha sinon sinon-chai karma-chai karma-chai-spies
+    2 karma.cong.js
+    3 test/button.test.js
+    4 "scripts": {
+        "dev-test": "parcel watch test/* --no-cache & karma start",
+        "test": "parcel build test/* --no-minify && karma start --single-run"
+      }
+    5 npm run test
+    ```
 8. 持续集成
 9. 重构
 10. 发布npm package
@@ -26,9 +40,11 @@
 - slot
 - $emit
 - props
-- chai (chai spies)
-- Karma
+- chai -> assertion library
+    - chai spies
+- Karma -> Spectacular Test Runner for JavaScript
+- Mocha -> test framewor
+- sinon -> JavaScript test spies, stubs and mocks
 - Headless Chrome
-- Mocha
 - Mock
 - npm scripts

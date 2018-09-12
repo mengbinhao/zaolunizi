@@ -8,6 +8,12 @@
     </button>
 </template>
 <script>
+
+//不推荐全局使用
+//import Vue from 'vue'
+//Vue.component(Icon.name, Icon)
+import Icon from './Icon'
+
 export default {
     name: 'my-button',
     //props: ['icon','iconPosition'],
@@ -24,6 +30,9 @@ export default {
                 return position === 'left' || position === 'right'
             }
         }
+    },
+    components: {
+      'my-icon': Icon
     }
 }
 </script>

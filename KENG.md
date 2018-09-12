@@ -15,3 +15,4 @@
     ```
     vertical-align: middle;
     ```
+4. 使用npm run test测试失败,删除.cache和dist或者parcel build test/* --no-minify，重新run一次
