@@ -27,7 +27,7 @@
       }
     5 npm run test
     ```
-8. 持续集成
+8. 持续集成 -> TravisCI / circleci
 9. 重构
 10. 发布npm package
 
@@ -46,5 +46,6 @@
 - Mocha -> test framewor
 - sinon -> JavaScript test spies, stubs and mocks
 - Headless Chrome
+- TravisCI
 - Mock
 - npm scripts
