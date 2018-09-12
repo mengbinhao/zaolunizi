@@ -2,7 +2,7 @@
   "name": "zaolunzi",
   "version": "0.0.1",
   "description": "vue ui component",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev:test4windows": "start parcel watch test/* --no-cache & start karma start",
     "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",

@@ -14,7 +14,7 @@
     - chai spies (mock click)
     - 使用块隔绝作用域+断言
 7. 自动化测试
-    - Karma测试运行器 呼起浏览器 加载测试脚本 运行测试脚本
+    - Karma 测试运行器 呼起浏览器 加载测试脚本 运行测试脚本
     - Mocha 单元测试框架 写测试用例
     - Sinon  JavaScript test spies, stubs and mocks 辅助测试
     ```
@@ -28,24 +28,34 @@
     5 npm run test
     ```
 8. 持续集成 -> TravisCI / circleci
-9. 重构
-10. 发布npm package
+9. 发布npm package
+    - 确保测试已通过
+    - package.json -> main -> index.js(引入自己的组件再统一导出)
+    - npm adduser
+    - npm publish
+    - mock用户如何使用自己的包 
+        - vue-cli
+            - 报错import语法有问题(babel转译)
+                - npx parcel build index.js --no-minify(不加有bug)
+                - main -> dist/index.js
+        - webpack
+        - parcel
+    - npm link or yarn link(必须本机用户)
+        - npm link xxxx
 
 
 ## knowledge point
 - CSS variable
 - CSS selector
-- Vue.component
 - sass
-- slot
-- $emit
-- props
+- Vue.component -> 单文件组件
+- slot / $emit / props
+- Parcel
 - chai -> assertion library
     - chai spies
 - Karma -> Spectacular Test Runner for JavaScript
 - Mocha -> test framewor
 - sinon -> JavaScript test spies, stubs and mocks
-- Headless Chrome
-- TravisCI
-- Mock
-- npm scripts
+- TravisCI / CircleCI
+- package.json
+    - npm link
