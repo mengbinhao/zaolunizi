@@ -5,7 +5,10 @@ addons:
   chrome: stable
 notifications:
   email:
-    - mengbinhao2018@gmail.com
+    recipients:
+      - mengbinhao2018@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always
 sudo: required
 before_script:
   - "sudo chown root /opt/google/chrome/chrome-sandbox"
