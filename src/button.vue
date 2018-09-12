@@ -24,15 +24,10 @@ export default {
                 return position === 'left' || position === 'right'
             }
         }
-    },
-    data () {
-        return {
-            
-        }
     }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .g-button {
   height: var(--button-height);
   font-size: var(--font-size);

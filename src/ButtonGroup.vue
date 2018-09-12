@@ -6,11 +6,6 @@
 <script>
 export default {
     name: 'my-buttongroup',
-    data () {
-        return {
-            
-        }
-    },
     mounted () {
         //console.log(this.$children);
         //console.log(this.$el.children);
@@ -23,14 +18,16 @@ export default {
     }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .g-buttongroup {
     display: inline-flex;
     vertical-align: middle;
     > .g-button {
         //below has a bug
         //&:not(:first-child) {border-left: none;}
-        margin-left: -1px;
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
         position: relative;
         &:hover { z-index: 1;}
         border-radius: 0;
