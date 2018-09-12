@@ -13,6 +13,7 @@
 
 ## knowledge point
 - CSS variable
+- CSS selector
 - Vue.component
 - sass
 - slot
