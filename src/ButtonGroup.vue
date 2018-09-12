@@ -10,6 +10,16 @@ export default {
         return {
             
         }
+    },
+    mounted () {
+        //console.log(this.$children);
+        //console.log(this.$el.children);
+        for(let node of this.$el.children) {
+            let nodeName = node.nodeName;
+            if (nodeName.toLowerCase() !== 'button') {
+                console.warn(`my-buttongroup的子元素应该是my-button,现在是${nodeName}`);
+            }
+        }
     }
 }
 </script>
