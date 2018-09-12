@@ -11,7 +11,11 @@
 5. button添加loading
 6. 单元测试
     - chai
-    - chai spies
+    - chai spies (mock click)
+7. 自动化测试(Karma)
+8. 持续集成
+9. 重构
+10. 发布npm package
 
 
 ## knowledge point
@@ -22,8 +26,9 @@
 - slot
 - $emit
 - props
-- Headless Chrome
+- chai (chai spies)
 - Karma
+- Headless Chrome
 - Mocha
-- Mock  chai spies
+- Mock
 - npm scripts
